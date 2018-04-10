@@ -1,14 +1,14 @@
 public class Controller {
 
     public String demToBinaryString(int a){
-        String temp = "";
-        int b;
+
+        StringBuilder sb = new StringBuilder();
         while (a != 0) {
-            b = a % 2;
-            temp = b + temp;
+            int b = a % 2;
+            sb.append(b);
             a = a / 2;
         }
-        return temp;
+        return String.valueOf(sb.reverse());
     }
 }
 
