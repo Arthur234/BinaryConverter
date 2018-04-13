@@ -1,21 +1,24 @@
+package decimal;
+
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class Controller {
-
-    public ArrayList<Integer> posDemToBinaryString(int a){
+/**
+ * Created by Arthur on 13.04.2018.
+ */
+public class DecToBin {
+    public ArrayList<Integer> posDemToBinaryString(int number){
         ArrayList<Integer> count = new ArrayList<Integer>();
-        while (a != 0) {
-            int temp = a % 2;
+        while (number != 0) {
+            int temp = number % 2;
             count.add(temp);
-            a = a / 2;
+            number = number / 2;
         }
         Collections.reverse(count);
         return count;
     }
 
     public ArrayList<Integer> negDemToBinaryString(int number){
-
         ArrayList<Integer> count = new ArrayList<Integer>();
         number = -number;
 
@@ -48,4 +51,3 @@ public class Controller {
         return addUnit(arrayList, i - 1);
     }
 }
-
