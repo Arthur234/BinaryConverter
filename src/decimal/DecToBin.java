@@ -50,4 +50,10 @@ public class DecToBin {
         }
         return addUnit(arrayList, i - 1);
     }
+
+    /*private ArrayList<Integer> fracToBinaryString(int number){
+        ArrayList<Integer> count = new ArrayList<Integer>();
+
+        return count;
+    }*/
 }
