@@ -1,12 +1,7 @@
 package binary;
 
-import java.util.ArrayList;
-
 import static java.lang.Math.pow;
 
-/**
- * Created by Arthur on 20.04.2018.
- */
 public class BinToDec {
 
     public int binToDec(int[] number){
