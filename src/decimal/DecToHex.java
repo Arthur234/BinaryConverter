@@ -11,6 +11,8 @@ public class DecToHex {
         BigDecimal bd;
         BigDecimal b;
 
+
+
         while (fraction != 0){
             while (fraction > 16) {
                 fraction = (fraction / 16);
@@ -24,6 +26,9 @@ public class DecToHex {
 
             result = values(temp, result);
         }
+
+        if(fraction * 16 % 16 == 0){ result.add("0"); }
+        
         return result;
     }
 
