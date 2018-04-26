@@ -6,6 +6,6 @@ public class DecToOctal {
     public ArrayList<Integer> decToOctal(){
         ArrayList<Integer> result = new ArrayList<Integer>();
 
-        return result;
+        return  result;
     }
 }
