@@ -6,5 +6,6 @@ public class Main{
 
         Dechimal d = new Dechimal();
         d.calculate(160, 10);
+        
     }
 }
