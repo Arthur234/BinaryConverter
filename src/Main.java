@@ -1,6 +1,7 @@
 import binary.BinToDec;
 import decimal.DecToBin;
 import decimal.DecToHex;
+import decimal.Dechimal;
 
 public class Main{
 
@@ -16,6 +17,10 @@ public class Main{
 //        System.out.println(dtb.posDemToBinaryString(14));
 //        System.out.println(dtb.negDemToBinaryString(-14));
 
-        System.out.println(dth.decToHex((double)320/16));
+//        System.out.println(dth.decToHex((double)320/16));
+
+        Dechimal d = new Dechimal();
+
+        d.calculate(400, 16);
     }
 }
