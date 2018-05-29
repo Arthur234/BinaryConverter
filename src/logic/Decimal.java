@@ -1,4 +1,4 @@
-package decimal;
+package logic;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -6,7 +6,7 @@ import java.util.Collections;
 /**
  * Created by root on 29.05.18.
  */
-public class Dechimal implements Controller{
+public class Decimal implements Controller{
 
     @Override
     public void calculate(int number, int system) {
@@ -24,6 +24,16 @@ public class Dechimal implements Controller{
             }
         }
         Collections.reverse(result);
+        System.out.println(result);
+    }
+
+    @Override
+    public void calculate(int[] a, int system) {
+        int result = 0;
+
+        for(int i = 0; i < a.length; i++){
+            result += a[i] * (int)Math.pow(system, i);
+        }
         System.out.println(result);
     }
 }
